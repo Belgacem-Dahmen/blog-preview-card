@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+
+
+    /* Couleurs */
+    /* Primary */
+    --primary-yellow: hsl(47, 88%, 63%);
+    /* Neutral */
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 50%);
+    --neutral-black: hsl(0, 0%, 7%);
+
+    /* Typographie */
+    /* Body Copy */
+    --body-font-size: 16px;
+
+    /* Police */
+    --font-family-body: 'Figtree', sans-serif;
+    --font-weight-body-regular: 500;
+    --font-weight-body-bold: 800;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--primary-yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-family: var(--font-family-body);
+    font-size: var(--body-font-size);
+    height: 100vh;
+}
+.card{
+    margin: auto;
+    background-color: var(--neutral-white);
+    max-width: 370px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--neutral-black);
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    box-shadow: 10px 5px;
+}
+
+.card-img{
+    border-radius: 10px;
+}
+
+.tag{
+    background-color: var(--primary-yellow);
+    padding: 5px 10px;
+    max-width: max-content;
+    border-radius: 5px;
+    font-weight: var(--font-weight-body-bold);
+}
+.card-title:hover {
+    color: var(--primary-yellow);
+    cursor: pointer;
+}
+
+.card-description{
+    color: var(--neutral-grey);
+    font-weight: var(--font-weight-body-regular);
+    line-height: 1.5rem;
+}
+
+
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-footer img {
+    width: 32px;
+}
